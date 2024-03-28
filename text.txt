@@ -1,0 +1,11 @@
+[checkCart,setCheckCart] = useState(true);
+
+handleddcrat ()
+=>{
+setcart
+setCheckCart(!checkCart);
+}
+
+{
+    checkCart ? "adddtocart " onclick={handleddcrat} : "remove art" onclic={haandlremovecart}
+}

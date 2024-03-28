@@ -1,0 +1,35 @@
+.nav{
+    justify-content: space-between;
+}
+.itemsList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.pricearea{
+    display: flex;
+}
+.no-gutters{
+    justify-content: center;
+}
+.adjustCenterBox{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;    flex-direction: column;
+
+}
+.removeStyleP{
+margin-top: none
+}
+.totalprice{
+    display: flex;
+    flex-direction: column;
+}
+.SUBTOTAL{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
