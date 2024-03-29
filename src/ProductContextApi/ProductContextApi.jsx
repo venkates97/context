@@ -78,7 +78,7 @@ export const ProductContextProvider = ({children})=>{
       const [cartList, setcartList] = useState([]);
       const [subtotal, setsubtotal] = useState([]);
       const [productName, setproductName] = useState(list)
-   
+ 
       
       return(
         <ProductContext.Provider value={{cartList,setcartList,subtotal,setsubtotal,productName, setproductName}}>

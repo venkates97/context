@@ -1,13 +1,18 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { ProductContext } from '../ProductContextApi/ProductContextApi';
 
 function Totalpricefinding() {
-    const { setcartList,cartList, subtotal, setsubtotal,productName,setproductName} = useContext(ProductContext)
+    const { setcartList,cartList, subtotal, setsubtotal} = useContext(ProductContext)
     var dummy = 0;
 
     return (
         <>
-   
+   {
+    console.log("in Total Price")
+   }
+   {
+    console.log(cartList)
+   }
             <div className="totalprice">
                 <div className="SUBTOTAL">
                     <p>SUBTOTAL</p>
@@ -27,7 +32,7 @@ function Totalpricefinding() {
                     <p>SHIPPING</p>
                     <p>FREE</p>
                 </div>
-                <div class="dropdown-divider"></div>
+                <div className="dropdown-divider"></div>
                 <div className="SUBTOTAL">
                     <p>TOTAL</p>
                     <p>{subtotal}</p>

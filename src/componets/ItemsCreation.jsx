@@ -1,50 +1,82 @@
 import React, { useContext, useState } from 'react'
 import { ProductContext } from '../ProductContextApi/ProductContextApi';
 
-function ItemsCreation({item}) {
-    if(item.isAddCart === undefined){
-        item.isAddCart = false;
+function ItemsCreation() {
+
+
+    const [isAddCart, setisAddCart] = useState()
+    const { cartList, setcartList, productName, setproductName } = useContext(ProductContext)
+    var dummy;
+
+
+ function RemoveFromCart(index) {
+        console.log("remove from cart")
+        dummy = cartList.filter((e) => e.id != index)
+        setcartList(dummy);
+        productName.map((e) => {
+            if (e.id == index) {
+                e.isAddCart = false;
+            }
+        })
     }
 
-    const [isAddCart, setisAddCart] = useState(item.isAddCart)
-    const {cartList, setcartList,productName, setproductName} = useContext(ProductContext)
-    item.isAddCart=isAddCart;
+    function AddToCart(index) {
+        console.log("Add to cart");
+        productName.map((e) => {
+            if (e.id == index) {
+                e.quantity = 1;
+                e.isAddCart = true;
+                setcartList([...cartList, e])
+            }
+        })
+        console.log(cartList);
+
+    }
+
     return (
         <>
-        {
-            setproductName(productName)
-        }
+            {
+                productName.map((item, index) => {
+                    return (
+                        <div key={index}>
+                            <div className="card" style={{ width: "18rem" }}>
+                                <img src={item.imgUrl} className="card-img-top" alt="..." />
+                                <div className="card-body">
+                                    <h5 className="card-title">{item.name}</h5>
+                                    <p className="card-text">{item.description}</p>
+                                    <button type="button" className={item.isAddCart ? "btn btn-danger" : "btn btn-success"}
+                                        onClick={() => {
+                                            console.log(item.isAddCart);
+                                            item.isAddCart == true ? RemoveFromCart(item.id) : AddToCart(item.id)
+                                        }
+                                        }
+                                    >
+                                        {
+                                            item.isAddCart ? "Remove from Cart" : "Add To Cart"
+                                        }
+                                    </button>
 
-            <div class="card" style={{width: "18rem"}}>
-                <img src={item.imgUrl} class="card-img-top" alt="..."/>
-                    <div class="card-body">
-                        <h5 class="card-title">{item.name}</h5>
-                        <p class="card-text">{item.description}</p>
-                        <button type="button" class={isAddCart ? "btn btn-danger":"btn btn-success"}
-                        onClick={()=>{
-                            setisAddCart(!isAddCart);
-                            if(isAddCart){
-                                const removecart =cartList.filter((e)=>e.id!=item.id);
-                                setcartList(removecart);
-                            }else{
-                              item.quantity=1;
-                              item.isAddCart=isAddCart;
-                                setcartList([...cartList,item]);
+                                </div>
+                            </div>
+                        </div>
+                    )
 
-                            }
-                            
-                            
-                        }}
-                        >
-                        {
-                            item.isAddCart? "Remove from Cart": "Add To Cart"
-                        }
-                        </button>
+                })
+            }
+            {
+                console.log("product name in Item Creatim:")
+            }
+            {
+                console.log(productName)
+            }
 
-                    </div>
-            </div>
+
         </>
     )
 }
 
 export default ItemsCreation
+
+
+
+

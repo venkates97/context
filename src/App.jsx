@@ -11,12 +11,12 @@ function App() {
   return (
     <>
     {/* Navigation Bar */}
-    <ul class="nav nav-pills " style={{backgroundColor:"black"}}>
-        <li class="nav-item" onClick={()=>navigate("/")}>
-          <Link class="nav-link text-white text-bold" to="/">PhoneKadai.com</Link>
+    <ul className="nav nav-pills " style={{backgroundColor:"black"}}>
+        <li className="nav-item" onClick={()=>navigate("/")}>
+          <Link className="nav-link text-white text-bold" to="/">PhoneKadai.com</Link>
         </li>
-        <li class="nav-item">
-        <button type="button" class="btn btn-success heigthAd"
+        <li className="nav-item">
+        <button type="button" className="btn btn-success heigthAd"
         onClick={()=>navigate("/mycart")}
         >My Cart {cartList.length}</button>
 

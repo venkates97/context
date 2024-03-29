@@ -5,16 +5,27 @@ import ItemsCreation from './componets/ItemsCreation';
 
 function ShopApp() {
   const navigate = useNavigate();
-  const { productName } = useContext(ProductContext);
+  const { productName,setproductName } = useContext(ProductContext);
 
   return (
     <>
       <h1>Mobile Phones</h1>
-    
-      <div className="itemsList">
+    {
+      productName.map((e)=>{
+        if(e.isAddCart === undefined)
         {
-          productName.map((e, index) => <ItemsCreation key={index} item={e} />)
+          e.isAddCart = false;
         }
+      })
+    }
+    {/* {
+      setproductName(productName)
+    } */}
+    {console.log("abouve")}
+    {console.log(productName)}
+      <div className="itemsList">
+        <ItemsCreation />
+        
       </div>
 
     </>
