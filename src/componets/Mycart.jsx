@@ -11,7 +11,7 @@ export function Mycart() {
     <>
       <h1>My Cart - Product List</h1>
       <CartItemCreation />
-      <Totalpricefinding/>
+    
 
       
 
