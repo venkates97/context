@@ -113,7 +113,7 @@ function CartItemCreation() {
                 
             }
             </div>
-            <Totalpricefinding/>
+            
 
         </>
 

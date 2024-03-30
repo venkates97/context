@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 9",
+    "description": "An apple mobile which is nothing like apple",
+    "price": 549,
+    "discountPercentage": 12.96,
+    "rating": false,
+    "stock": 94,
+    "brand": "Apple",
+    "category": "smartphones",
+    "saleTag": true,
+    "buttonOp": "Add_to_cart",
+    "imgUrl": "https://w7.pngwing.com/pngs/485/391/png-transparent-ios-9-iphone-6s-plus-apple-desktop-iphone-apple-gadget-electronics-computer-thumbnail.png"
+  },
+  {
+    "id": 2,
+    "name": "iPhone X",
+    "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+    "price": 899,
+    "discountPercentage": 17.94,
+    "rating": false,
+    "stock": 34,
+    "brand": "Apple",
+    "category": "smartphones",
+    "saleTag": true,
+    "buttonOp": "Add_to_cart",
+    "imgUrl": "https://www.freeiconspng.com/thumbs/iphone-x-pictures/apple-iphone-x-pictures-5.png"
+  },
+  {
+    "id": 3,
+    "name": "Samsung Universe 9",
+    "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+    "price": 1249,
+    "discountPercentage": 15.46,
+    "rating": false,
+    "stock": 36,
+    "brand": "Samsung",
+    "category": "smartphones",
+    "saleTag": true,
+    "buttonOp": "Add_to_cart",
+    "imgUrl": "https://w7.pngwing.com/pngs/795/89/png-transparent-samsung-galaxy-note-8-samsung-galaxy-s9-android-smartphone-sao-joao-purple-electronics-gadget-thumbnail.png"
+  },
+  {
+    "id": 4,
+    "name": "OPPOF19",
+    "description": "OPPO F19 is officially announced on April 2021.",
+    "price": 280,
+    "discountPercentage": 17.91,
+    "rating": false,
+    "stock": 123,
+    "brand": "OPPO",
+    "category": "smartphones",
+    "saleTag": true,
+    "buttonOp": "Add_to_cart",
+    "imgUrl": "https://www.oppo.com/content/dam/oppo/common/mkt/v2-2/beta-f19/navigation/F19-navigation-blue-v2.png"
+  },
+  {
+    "id": 5,
+    "name": "Huawei P30",
+    "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+    "price": 499,
+    "discountPercentage": 10.58,
+    "rating": false,
+    "stock": 32,
+    "brand": "Huawei",
+    "category": "smartphones",
+    "saleTag": true,
+    "buttonOp": "Add_to_cart",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZNVMONOFPNdQXOr-3jbqY_ndZcW3fZNHl8_6mmkzzrw&s"
+  }
+]

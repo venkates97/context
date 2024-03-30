@@ -8,6 +8,7 @@ import { ProductContext } from './ProductContextApi/ProductContextApi';
 function App() {
   const navigate=useNavigate();
   const {cartList}=useContext(ProductContext);
+
   return (
     <>
     {/* Navigation Bar */}

@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react'
 import { ProductContext } from '../ProductContextApi/ProductContextApi';
 
 function Totalpricefinding() {
-    const { setcartList,cartList, subtotal, setsubtotal} = useContext(ProductContext)
+    const { cartList, subtotal, setsubtotal} = useContext(ProductContext)
     var dummy = 0;
 
     return (
